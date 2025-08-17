@@ -1,6 +1,7 @@
 import pyautogui as pag
 import tkinter as tk
-import time as tspeed = 1.0 
+import time as t
+speed = 1.0 
 click_active = False 
 click_job = None 
 
@@ -52,8 +53,10 @@ def perform_click():
 # --- Tkinter GUI Setup ---
 
 window = tk.Tk()
-window.title("Autoclicker")
-
+window.title("TG Autoclicker")
+window.attributes("-topmost", True)
+label_ = tk.Label(window, text="TG Autoclicker https://github.com/BridgesPrivateDectectivesInc/tg-autoclicker")
+label_.pack(pady=30, padx=10)
 # Speed input
 speed_label = tk.Label(window, text="Click Speed (seconds):")
 speed_label.pack(pady=5)
