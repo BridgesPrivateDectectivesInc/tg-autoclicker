@@ -47,11 +47,11 @@ def perform_click():
     else:
         status_label.config(text="Stopped")
 
-def sendMouseto(event):
+def sendMouseto():
     """Send the mouse to x, y and start clicking."""
     x=int(coordsx_input.get())
     y=int(coordsy_input.get())
-    pag.moveto(x, y)
+    pag.moveTo(x, y)
     print("Sent mouse to ({x}, {y})")
     start_clicking()
 
