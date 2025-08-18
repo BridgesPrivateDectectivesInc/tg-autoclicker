@@ -1,7 +1,7 @@
 # tg-autoclicker
 An autoclicker made in python utilizing pyautogui and tkinter.
-<img src="https://i.ibb.co/tMCWCWMd/Screenshot-2025-08-17-104853.png" alt="TG-Autoclicker in action." border="0" />
-
+<img src="https://i.ibb.co/tMCWCWMd/Screenshot-2025-08-17-104853.png" alt="TG-Autoclicker White Theme" border="0" />
+<img src="https://ibb.co/FqLThfTW" alt="TG-Autoclicker Dark Theme" border="0">
 # Features and Usage
 - Autoclicker for Clicker Games, Idle Games, and more.
 - Force stopping for if it goes rouge (sorry abt that).
