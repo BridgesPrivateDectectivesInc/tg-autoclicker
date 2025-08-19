@@ -8,9 +8,11 @@ An autoclicker made in python utilizing pyautogui and tkinter.
 - Status indicator.
 - Always above all windows
 # Installation
+Download 'autoclicker_.exe' and then run the program! Please report bugs to me.
+# Alt. Install
 Go to python.org and download the latest version of python. install it into your PATH so you can use pip commands!
 Then, type this into command prompt.
 ```bash
 pip install pyautogui
 ```
-Then, download autoclicker.py and run it! Please report any errors to me!
+Then, download autoclicker.py and run it!
