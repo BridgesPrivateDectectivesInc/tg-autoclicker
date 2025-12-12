@@ -1,13 +1,21 @@
 import pyautogui as pag
 import tkinter as tk
 import time as t
+# --- Variables regarding the Autoclicker's Functions. ---
 speed = 1.0 
 click_active = False 
 click_job = None 
 version="1.0.2"
+# --- Style, feel free to change. ---
+background_color="2C2C2C"
+foreground_color="white"
+
+button_bg_color="#4C4B4B"
+button_fg_color="white"
 # --- Functions for button actions ---
 
 def start_clicking():
+    """Stop reading this code explination it's so obvious bro 🥀"""
     global click_active, speed, click_job
     click_active = True
 
@@ -29,6 +37,7 @@ def start_clicking():
     perform_click()
 
 def stop_clicking():
+    """I wonder what this does, Captain Obvious."""
     global click_active, click_job
     click_active = False
     if click_job:
@@ -60,33 +69,33 @@ def sendMouseto():
 window = tk.Tk()
 window.title(f"TG Autoclicker v{version}")
 window.attributes("-topmost", True)
-window.configure(bg="#2C2C2C")
+window.configure(bg=background_color)
 label_ = tk.Label(window, text=f"TG Autoclicker v{version}\nhttps://github.com/BridgesPrivateDectectivesInc/tg-autoclicker")
 label_.pack(pady=30, padx=10)
-label_.configure(bg="#2C2C2C", fg="white", font="Arial")
+label_.configure(bg=background_color, fg=foreground_color, font="Arial")
 
 # Speed input
 speed_label = tk.Label(window, text="Click Speed (seconds):")
 speed_label.pack(pady=5)
-speed_label.configure(bg="#2C2C2C", fg="white", font="Arial")
+speed_label.configure(bg=background_color, fg=foreground_color, font="Arial")
 speed_entry = tk.Entry(window)
 speed_entry.insert(0, "0.5") # Default value
 speed_entry.pack(padx=25, pady=5)
-speed_entry.configure(bg="#4C4B4B", fg="white", font="Arial")
+speed_entry.configure(bg=button_bg_color, fg=button_fg_color, font="Arial")
 
 # Coords inputs
 coordsx_label = tk.Label(window, text="X Coordinate:")
 coordsx_label.pack(pady=5)
-coordsx_label.configure(bg="#2C2C2C", fg="white", font="Arial")
+coordsx_label.configure(bg=background_color, fg=foreground_color, font="Arial")
 
 coordsx_input = tk.Entry(window)
 coordsx_input.insert(0, "100")
 coordsx_input.pack(padx=25, pady=6)
-coordsx_input.configure(bg="#4C4B4B", fg="white", font="Arial")
+coordsx_input.configure(bg=button_bg_color, button_fg_color, font="Arial")
 
 coordsy_label = tk.Label(window, text="Y Coordinate:")
 coordsy_label.pack(pady=5)
-coordsy_label.configure(bg="#2C2C2C", fg="white", font="Arial")
+coordsy_label.configure(bg=background_color, fg=foreground_color, font="Arial")
 
 coordsy_input = tk.Entry(window)
 coordsy_input.insert(0, "100")
@@ -116,3 +125,4 @@ failsafe_info.pack(pady=5)
 failsafe_info.configure(bg="#2C2C2C",font="Arial")
 
 window.mainloop()
+
